@@ -8,6 +8,7 @@ import kendaraanBeragam from "../assets/kendaraan.svg";
 import kendaraanService from "../assets/car-service.svg";
 import customerService from "../assets/customer-service.svg";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -18,10 +19,10 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="flex flex-col px-4 lg:flex-row">
             <div className="w-full lg:w-1/2 lg:my-auto">
-              <h1 className="text-2xl lg:text-5xl font-bold  mb-3 lg:mb-5">
+              <h1 className="text-2xl lg:text-5xl font-bold mb-3 lg:mb-5">
                 Rental Kendaraan Instant di Dekatmu!
               </h1>
-              <p className="lg:text-lg ">
+              <p className="lg:text-lg">
                 Booking di tempat sesuai keinginan berdasarkan jam atau hari,
                 termasuk bahan bakar di awal penyewaan.
               </p>
@@ -130,11 +131,11 @@ const Home = () => {
                 sediakan lalu cobalah untuk menyewanya!
               </p>
             </div>
-            <a
-              href="#"
+            <Link
+              to={"/kendaraan"}
               className="bg-primary p-4 my-auto rounded-full text-white font-bold hover:bg-white border hover:border-primary hover:text-primary duration-300 ease-in-out">
               Lihat List Kendaraan
-            </a>
+            </Link>
           </div>
         </div>
       </section>
