@@ -23,6 +23,13 @@ const OrderList = (props) => {
                     Cancel
                   </button>
                 </div>
+                <div className="w-full mt-10">
+                  <a
+                    href="/sukses"
+                    className="bg-green-500 text-white p-2 rounded-lg">
+                    Sewa Sekarang!
+                  </a>
+                </div>
               </div>
             )
           )
